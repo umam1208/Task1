@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="st1.css" type="text/css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="Register">
+        <form id="Register">
+          <div class="here">
+            <lable style="font-size: 40px">Register Here</lable><br /><br />
+          </div>
+          <lable for="fname">First Name :</lable><br />
+          <input
+            type="text"
+            name="fname"
+            id="name"
+            placeholder="Enter Your First Name"
+          />
+          <br /><br />
+          <lable for="lname">Last Name :</lable><br />
+          <input
+            type="text"
+            name="lname"
+            id="name"
+            placeholder="Enter Your Last Name"
+          />
+          <br /><br />
+          <lable for="age">Enter Your Age :</lable><br />
+          <input
+            type="text"
+            name="age"
+            id="name"
+            placeholder="How Old Are You"
+          />
+          <br /><br />
+          <lable for="mail">Email :</lable><br />
+          <input
+            type="email"
+            name="mail"
+            id="name"
+            placeholder="xyz31june@gmail.com"
+          />
+          <br /><br />
+          <lable for="pass">Password :</lable><br />
+          <input
+            type="password"
+            name="pass"
+            id="name"
+            maxlength="8"
+            placeholder="Abcd.123"
+          />
+          <br /><br />
+          <lable>Gender :</lable><br />
+          &nbsp;&nbsp;
+          <!--space in same line-->
+          <input value="1" type="radio" id="male" name="Gender" />
+          <lable for="male">Male</lable>
+          <input value="2" type="radio" id="Female" name="Gender" />
+          <lable for="Female">Female</lable> <br /><br />
+          <lable>Known Language :</lable><br />
+          &nbsp;&nbsp;
+          <input type="checkbox" id="hi" />
+          <lable for="hi">Hindi</lable>
+          <input type="checkbox" id="en" />
+          <lable for="en">English</lable>
+          <input type="checkbox" id="urdu" />
+          <lable for="urdu">Urdu</lable><br /><br />
+          <lable for="upload">Upload File :</lable><br />
+          <input
+            type="file"
+            name="upload"
+            id="name"
+            multiple
+            accept="image/*"
+          />
+          <br /><br />
+          <lable>Area of Interest :</lable><br />
+          <select>
+            <option>none</option>
+            <optgroup label="Good in Coding">
+              <option>Web Development</option>
+              <option>Software Development</option>
+              <option>Data Science</option>
+            </optgroup>
+            <!--end of first group-->
+            <optgroup label="Fields to work on">
+              <option>UI Designer</option>
+              <option>Content Manager</option>
+              <option>Social Media Manager</option>
+            </optgroup>
+            <!--end of second group-->
+          </select>
+          <!--end of select-->
+          <br /><br />
+          <lable for="reg">Date of Registration :</lable><br />
+          <input type="month" id="reg" />
+          <br /><br />
+          <lable for="date"> Birth Date :</lable><br />
+          <input type="date" id="date" min="2023-07-31" max="2023-08-15" />
+          <br /><br />
+          <lable>Contact Number :</lable><br />
+          <input type="number" placeholder="Mobile No." name="num" id="name" />
+          <br /><br />
+          <lable>Address :</lable><br />
+          <textarea id="name" placeholder=" Your Permanent Address"></textarea>
+          <br /><br />
+          <lable>Additional Contact Number : </lable><br />
+          <input type="tel" pattern="[0-9]{10}" name="no" id="name" />
+          <br /><br />
+          <input type="submit" value="SUBMIT" name="submit" id="submit" />
+          <br /><br />
+          <input type="reset" value="Reset" />
+        </form>
+      </div>
+      <!--end Register-->
+    </div>
+    <!--end main-->
+  </body>
+</html>
